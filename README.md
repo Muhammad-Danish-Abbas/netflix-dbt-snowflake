@@ -8,7 +8,7 @@ following a medallion (Bronze/Silver/Gold) architecture.
 local CSV ──▶ Snowflake internal stage ──▶ COPY INTO RAW tables ──▶ dbt staging ──▶ dbt intermediate ──▶ dbt marts
 ```
 
-![Architecture Diagram](screenshots/Architecture%20Diagram.png)
+![Architecture Diagram](screenshots/Architecture%20Diagram.jpg)
 
 ## Repository structure
 
