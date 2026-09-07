@@ -1,0 +1,7 @@
+venv/
+netflix/target/
+netflix/logs/
+netflix/dbt_packages/
+*.pyc
+__pycache__/
+.env

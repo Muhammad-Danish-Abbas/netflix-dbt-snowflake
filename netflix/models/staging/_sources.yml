@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: NETFLIX_DB
+    schema: RAW
+    tables:
+      - name: netflix_titles
+      - name: credits

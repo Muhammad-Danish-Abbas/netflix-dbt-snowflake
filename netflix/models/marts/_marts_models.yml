@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_titles_by_year
+    description: "Titles count grouped by release year and type"
+    columns:
+      - name: release_year
+        data_tests:
+          - not_null
+
+  - name: mart_top_actors
+    description: "Top 50 actors by number of appearances"
+    columns:
+      - name: actor_name
+        data_tests:
+          - unique
+          - not_null

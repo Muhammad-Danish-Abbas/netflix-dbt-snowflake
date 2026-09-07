@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_netflix_titles
+    description: "Staged Netflix titles data"
+    columns:
+      - name: show_id
+        description: "Unique identifier for each title"
+        data_tests:
+          - unique
+          - not_null
+      - name: type
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Movie', 'TV Show']
+
+  - name: stg_credits
+    description: "Staged Netflix credits data"
+    columns:
+      - name: show_id
+        description: "Show ID linking to netflix_titles"
+        data_tests:
+          - not_null
+      - name: name
+        data_tests:
+          - not_null
