@@ -2,7 +2,7 @@
 
 End-to-end ELT project: the Netflix titles + credits dataset is loaded directly into
 **Snowflake** (no S3/Terraform) via **Snowsight UI**, and transformed with **dbt**
-following a medallion (Bronze/Silver/Gold) architecture.
+following a medallion (Bronze/Silver/Gold) architecture
 
 ```
 local CSV ──▶ Snowflake internal stage ──▶ COPY INTO RAW tables ──▶ dbt staging ──▶ dbt intermediate ──▶ dbt marts
